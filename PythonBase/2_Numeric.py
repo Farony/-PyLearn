@@ -75,10 +75,22 @@ print("math.atanh(", x, ") =", math.atanh(x))
 print("math.copysign(", x, -3, ") =", math.copysign(x, y))
 x = 1.867
 print("math.cos(", x, ") =", math.cos(x))
-print("math.cosh(", 0.876, ") =", math.acos(0.876))
+print("math.cosh(", 0.876, ") =", math.cosh(0.876))
+print("math.sin(", x, ") =", math.sin(x))
+print("math.sinh(", 0.876, ") =", math.sinh(0.876))
+print("math.tan(", x, ") =", math.tan(x))
+print("math.tanh(", 0.876, ") =", math.tanh(0.876))
+
+
 print("math.degrees(math.acos(", 0.876, ")) =", math.degrees(math.acos(0.876)))
+print("math.radians(", 135, ") =", math.radians(135))
+
 print("math.e", math.e)
+print("math.pi", math.pi)
 print("math.exp(", x, ") =", math.exp(x))  # Возвращает e в степени x, то есть math.e ** x
+print("math.pow(", x, y, ") =", math.pow(y, x))  # Возвращает $$x^y$$ в виде числа типа float
+print("math.sqrt(", 425, ") =", math.sqrt(425))  # Возвращает e в степени x, то есть math.e ** x
+
 print("math.fabs(", -x, ") =", math.fabs(x))  # Возвращает абсолютное значение x в виде числа типа float
 print("math.factorial(", 5, ") =", math.factorial(5))  # Возвращает Возвращает x!
 print("math.floor(", x, ") =", math.floor(x))  #
@@ -86,12 +98,21 @@ print("math.fmod(", x, y, ") =", math.fmod(y, x))  # Выполняет деле
 # число y дает более точный результат, чем оператор %, применительно к числам типа float
 print("math.frexp(", x, ") =", math.frexp(x))  # Возвращает кортеж из двух элементов с мантиссой (в виде числа
 # типа float) и экспонентой (в виде числа типа int)
+print("math.ldexp( 0.9333, 1 ) =", math.ldexp(0.9333, 1))  # Возвращает $$m \cdot 2^x$$ – операция, обратная math.frexp
 print("math.fsum(", (2, 3, 6), ") =", math.fsum((2, 3, 6)))  # Возвращает сумму значений в итерируемом объекте i в
 # виде числа типа float
+
 print("math.hypot(", x, y, ") =", math.hypot(y, x))  # Возвращает расстояние от точки (0,0) до точки
 # (x,y) $$\sqrt{x^2 + y^2}$$
-print("math.isinf(", x, ") =", math.isinf(x))  # Возвращает True, если значение x типа
+print("math.isinf(", 2/3, ") =", math.isinf(2/3))  # Возвращает True, если значение x типа
 # float является бесконечностью $$±\infty$$
+print("math.isnan(", 2/3, ") =", math.isinf(2/3))  # Возвращает True, если значение x типа float не является числом
+print("math.log(", x, y, ") =", math.log(y, x))  # Возвращает $$\log_{b} {x}$$, аргумент b является необязательным и
+# по умолчанию имеет значение math.e
+print("math.log10(", x, ") =", math.log10(x))
+print("math.log1p(", x, ") =", math.log1p(x))  # Возвращает $$\log_{e} (1+x)$$; дает точные значения, даже когда
+# значение x близко к 0
+print("math.modf(", x, ") =", math.modf(x))  # Возвращает дробную и целую часть числа x в виде двух значений типа float
 
 
 
